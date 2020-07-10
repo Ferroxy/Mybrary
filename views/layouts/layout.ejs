@@ -6,17 +6,29 @@
     <title>Mylibrary</title>
     <style>
         body {
+            color: blue;
             font-family: monospace;
+            padding: 20px;
+        }
+        .haut {
+            height: 50px;
+            background-color: coral;
+            padding: 20px;
+        }
+        .bas {
+            height: 50px;
+            background-color: rgb(139, 134, 134);
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    Before
-    <hr>
+    <p class="haut">Before...Voici le temps venu d'aller prier pour mon salut... <u>Floffi</u> est revenue !!!
+    </p><hr>
     <%- include('../partials/header.ejs') %>
     <%- include('../partials/errorMessage.ejs') %>
     <%- body %>
     <hr>
-    After
+    <p class="bas">After</p>
 </body>
 </html>
