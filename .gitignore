@@ -1,3 +1,7 @@
 .env
 node_modules
-public/uploads
+public/xuploads
+views/layouts/xlayout.ejs
+views/books/xnew.ejs
+routes/xbooks.js
+models/xbook.js

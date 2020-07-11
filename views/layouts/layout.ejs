@@ -3,32 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script defer src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
+    <script defer src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+    <script defer src="https://unpkg.com/filepond/dist/filepond.js"></script>
+    <script defer src="/javascripts/fileUpload.js"></script>
     <title>Mylibrary</title>
-    <style>
-        body {
-            color: blue;
-            font-family: monospace;
-            padding: 20px;
-        }
-        .haut {
-            height: 50px;
-            background-color: coral;
-            padding: 20px;
-        }
-        .bas {
-            height: 50px;
-            background-color: rgb(139, 134, 134);
-            padding: 20px;
-        }
-    </style>
 </head>
 <body>
-    <p class="haut">Before...Voici le temps venu d'aller prier pour mon salut... <u>Floffi</u> est revenue !!!
-    </p><hr>
     <%- include('../partials/header.ejs') %>
     <%- include('../partials/errorMessage.ejs') %>
     <%- body %>
-    <hr>
-    <p class="bas">After</p>
 </body>
 </html>
